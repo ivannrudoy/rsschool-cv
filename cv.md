@@ -57,3 +57,12 @@ const countBits = (numb) => {
 ### Projects
 - [Crypto](https://ivannrudoy.github.io/ivannrudoy)
 - [CV](https://github.com/ivannrudoy/rsschool-cv)
+
+## Education
+### Main
+- NI RHTU
+
+### Courses
+- **Coursera:** Algorithms
+- **KTS:** Junior Frontend developer
+- **HTMLAcademy**
