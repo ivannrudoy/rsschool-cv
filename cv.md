@@ -10,3 +10,23 @@ Ivan Rudoy
 I like to learn something new. I like programming, but it's only a hobby now. I
 want to change this. I see my goal in career as a professional frontend 
 developer. I complete several courses. I am ready to work in team.
+
+## Skills
+### Languages
+- JavaScript
+- Typescript
+- HTML
+- PUG
+- CSS
+- SCSS
+- BASH
+
+### Libraries
+- React
+- react-router
+- Mobx
+
+### Utilities
+- OS Debian
+- Git
+- Figma
