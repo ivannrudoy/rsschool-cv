@@ -30,3 +30,25 @@ developer. I complete several courses. I am ready to work in team.
 - OS Debian
 - Git
 - Figma
+
+## Code sample
+<pre>
+/**
+ * the number of bits that are equal to one in the binary representation of 
+ * that number
+ *
+ * @param {number} numb The number
+ * @returns {number} Number of bits
+ */
+const countBits = (numb) => {
+  if (numb === 0) {
+    return 0;
+  }
+  return numb.toString(2).split('').reduce((acc, cur) => {
+    if (cur === '1') {
+      acc = acc + 1;
+    }
+    return acc;
+  }, 0);
+};
+</pre>
