@@ -66,3 +66,7 @@ const countBits = (numb) => {
 - **Coursera:** Algorithms
 - **KTS:** Junior Frontend developer
 - **HTMLAcademy**
+
+## Language
+### English
+- A2 and no speacking practice
