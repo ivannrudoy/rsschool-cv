@@ -19,3 +19,13 @@
   display: inline;
   margin-right: 8px;
 }
+
+.button {
+  cursor: pointer;
+}
+
+.button_link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+}
