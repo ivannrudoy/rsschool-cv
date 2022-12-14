@@ -20,6 +20,11 @@
   margin-right: 8px;
 }
 
+.avatar {
+  border-radius: 50%;
+  border: 5px dotted yellow;
+}
+
 .button {
   cursor: pointer;
 }
