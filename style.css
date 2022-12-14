@@ -25,6 +25,16 @@
   border: 5px dotted yellow;
 }
 
+.section_full-h {
+  height: 100vh;
+}
+
+.section_two-cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .button {
   cursor: pointer;
 }
