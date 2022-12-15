@@ -6,6 +6,7 @@
   --blue: #051e3e;
   --blue-700: #041a36;
   --blue-800: #04162e;
+  --blue-900: #031124;
   --skyblue: #F0FBFA;
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
@@ -43,6 +44,23 @@
   display: flex;
   width: 225px;
   justify-content: space-between;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95%;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyrights__logo {
+  width: 32px;
 }
 
 .section__title {
@@ -99,6 +117,10 @@
 
 .bg_blue-800 {
   background-color: var(--blue-800);
+}
+
+.bg_blue-900 {
+  background-color: var(--blue-900);
 }
 
 .text_raised {
