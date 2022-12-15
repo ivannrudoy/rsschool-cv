@@ -54,6 +54,10 @@
   background-color: var(--purple);
 }
 
+.text_sans {
+  font-family: sans-serif;
+}
+
 .text_skyblue {
   color: var(--skyblue);
 }
