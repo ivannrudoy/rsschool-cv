@@ -1,6 +1,8 @@
 :root {
   --purple: #851e3e;
   --skyblue: #F0FBFA;
+  --section__title_w: 100px;
+  --section__content_w: 304px;
 }
 
 .page {
@@ -28,6 +30,14 @@
 .avatar {
   border-radius: 50%;
   border: 5px dotted yellow;
+}
+
+.section__title {
+  flex-basis: var(--section__title_w);
+}
+
+.section__content {
+  flex-basis: var(--section__content_w);
 }
 
 .section_full-h {
