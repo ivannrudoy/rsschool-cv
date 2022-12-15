@@ -1,3 +1,7 @@
+:root {
+  --purple: #851e3e;
+}
+
 .page {
   padding: 0;
   margin: 0;
@@ -33,6 +37,10 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.bg_purple {
+  background-color: var(--purple);
 }
 
 .button {
