@@ -1,6 +1,7 @@
 :root {
   --purple: #851e3e;
   --purple-700: #651e3e;
+  --purple-800: #451e3e;
   --skyblue: #F0FBFA;
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
@@ -68,6 +69,10 @@
 
 .bg_purple-700 {
   background-color: var(--purple-700);
+}
+
+.bg_purple-800 {
+  background-color: var(--purple-800);
 }
 
 .text_raised {
