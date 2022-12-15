@@ -132,6 +132,29 @@
         </article>
 			</div>
 		</section>
+		<section class="code-sample main__section main__code-sample section_full-h section_two-cols" id="code-sample">
+			<h2 class="code-sample__title section__title">Code Sample</h2>
+			<div class="section__content">
+			  <pre class="code-sample__code">
+				  <code class="language-javascript">
+const countBits = (numb) => {
+  if (numb === 0) {
+    return 0;
+  }
+  return numb
+    .toString(2)
+    .split('')
+    .reduce((acc, cur) => {
+      if (cur === '1') {
+        acc = acc + 1;
+      }
+      return acc;
+    }, 0);
+};
+	        </code>
+			  </pre>
+			</div>
+		</section>
   </main>
 </body>
 </html>
