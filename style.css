@@ -1,5 +1,6 @@
 :root {
   --purple: #851e3e;
+  --skyblue: #F0FBFA;
 }
 
 .page {
@@ -39,10 +40,6 @@
   justify-content: space-evenly;
 }
 
-.bg_purple {
-  background-color: var(--purple);
-}
-
 .button {
   cursor: pointer;
 }
@@ -51,4 +48,12 @@
   text-decoration: none;
   text-transform: capitalize;
   color: inherit;
+}
+
+.bg_purple {
+  background-color: var(--purple);
+}
+
+.text_skyblue {
+  color: var(--skyblue);
 }
