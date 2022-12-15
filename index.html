@@ -43,32 +43,95 @@
     </section>
   </header>
   <main>
-  <section id="about" class="about main__section main__about bg_purple-700 section_full-h section_two-cols">
-    <h2 class="about__title section__title">About me</h2>
-    <div class="about__content section__content text_sans">
-      <p>
-      Hello! I am a non professional (but want to become) frontend developer.
-      </p>
-      <div>
-        I like to:
+    <section id="about" class="about main__section main__about bg_purple-700 section_full-h section_two-cols">
+      <h2 class="about__title section__title">About me</h2>
+      <div class="about__content section__content text_sans">
+        <p>
+        Hello! I am a non professional (but want to become) frontend developer.
+        </p>
+        <div>
+          I like to:
+        </div>
+        <div>
+        <ul>
+          <li>programming</li>
+          <li>learn something new</li>
+        </ul>
+        </div>
+        <div>
+          My principles:
+        </div>
+        <div>
+        <ul>
+          <li><strong class="text_skyyellow">K</strong>eep <strong class="text_skyyellow">I</strong>t <strong class="text_skyyellow">S</strong>imple</li>
+          <li><strong class="text_skyyellow">D</strong>ont <strong class="text_skyyellow">R</strong>epeat <strong class="text_skyyellow">Y</strong>ourself</li>
+        </ul>
+        </div>
       </div>
-      <div>
-      <ul>
-        <li>programming</li>
-        <li>learn something new</li>
-      </ul>
+    </section>
+    <section id="skills" class="skills main__section main__skills section_full-h section_two-cols bg_purple-800">
+      <h2 class="skills__title section__title">Skills</h2>
+      <div class="skills__content section__content">
+        <div class="tabs">
+          <div class="tabs__buttons" role="tablist">
+            <a class="tabs__button button_link" role="tab" data-id="0">Languages</a>
+            <a class="tabs__button button_link" role="tab" data-id="1">Frameworks</a>
+            <a class="tabs__button button_link" role="tab" data-id="2">Utilities</a>
+          </div>
+          <div class="tabs__content" role="region">
+            <ul class="tabs__item" role="tabpanel" data-id="0">
+              <li>JavaScript</li>
+              <li>Typescript</li>
+              <li>node.js</li>
+              <li>HTML</li>
+              <li>Pug</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>Bash</li>
+            </ul>
+            <ul class="tabs__item tabs__item_hidden" role="tabpanel" data-id="1">
+              <li>React</li>
+              <li>react-router</li>
+              <li>mobx</li>
+              <li>styled components</li>
+              <li>jest</li>
+              <li>puppyter</li>
+            </ul>
+            <ul class="tabs__item tabs__item_hidden" role="tabpanel" data-id="2">
+              <li>webpack</li>
+              <li>eslint</li>
+              <li>Figma</li>
+              <li>Git</li>
+              <li>Debian</li>
+              <li>Windows</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div>
-        My principles:
-      </div>
-      <div>
-      <ul>
-        <li><strong class="text_skyyellow">K</strong>eep <strong class="text_skyyellow">I</strong>t <strong class="text_skyyellow">S</strong>imple</li>
-        <li><strong class="text_skyyellow">D</strong>ont <strong class="text_skyyellow">R</strong>epeat <strong class="text_skyyellow">Y</strong>ourself</li>
-      </ul>
-      </div>
-    </div>
-  </section>
+    </section>
+		<section id="projects" class="projects main__section main__project section_full-h section_two-cols bg_purple-900">
+			<h2 class="projects__title section__title">Projects</h2>
+			<div class="projects__content section__content">
+        <article>
+          <h3>Crypto</h3>
+          <div class="projects__desc text_sans">
+            <img src="./pictures/projects/crypto.png" alt="client"/>
+            <div>
+              <ul>Features:
+                <li>Coingecko API Client</li>
+                <li>React</li>
+                <li>Mobx</li>
+              </ul>
+              <ul>Links:
+                <li>
+                  <a href="https://ivannrudoy.github.io/ivannrudoy">Deployed Application</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+			</div>
+		</section>
   </main>
 </body>
 </html>

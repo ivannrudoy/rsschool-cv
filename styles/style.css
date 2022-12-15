@@ -1,6 +1,8 @@
 :root {
   --purple: #851e3e;
   --purple-700: #651e3e;
+  --purple-800: #451e3e;
+  --purple-900: #251e3e;
   --skyblue: #F0FBFA;
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
@@ -32,6 +34,12 @@
 .avatar {
   border-radius: 50%;
   border: 5px dotted yellow;
+}
+
+.projects__desc {
+  display: flex;
+  width: 225px;
+  justify-content: space-between;
 }
 
 .section__title {
@@ -68,6 +76,14 @@
 
 .bg_purple-700 {
   background-color: var(--purple-700);
+}
+
+.bg_purple-800 {
+  background-color: var(--purple-800);
+}
+
+.bg_purple-900 {
+  background-color: var(--purple-900);
 }
 
 .text_raised {
