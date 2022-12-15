@@ -54,6 +54,15 @@
   height: 95%;
 }
 
+.copyrights {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyrights__logo {
+  width: 32px;
+}
+
 .section__title {
   flex-basis: var(--section__title_w);
 }
