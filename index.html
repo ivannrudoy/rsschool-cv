@@ -109,9 +109,9 @@
         </div>
       </div>
     </section>
-		<section id="projects" class="projects main__section main__project section_full-h section_two-cols bg_purple-900">
-			<h2 class="projects__title section__title">Projects</h2>
-			<div class="projects__content section__content">
+    <section id="projects" class="projects main__section main__project section_full-h section_two-cols bg_purple-900">
+      <h2 class="projects__title section__title">Projects</h2>
+      <div class="projects__content section__content">
         <article>
           <h3>Crypto</h3>
           <div class="projects__desc text_sans">
@@ -130,8 +130,48 @@
             </div>
           </div>
         </article>
-			</div>
-		</section>
+      </div>
+    </section>
+    <section class="code-sample main__section main__code-sample bg_blue section_full-h section_two-cols" id="code-sample">
+      <h2 class="code-sample__title section__title">Code Sample</h2>
+      <div class="section__content">
+        <pre class="code-sample__code">
+          <code class="language-javascript">
+const countBits = (numb) => {
+  if (numb === 0) {
+    return 0;
+  }
+  return numb
+    .toString(2)
+    .split('')
+    .reduce((acc, cur) => {
+      if (cur === '1') {
+        acc = acc + 1;
+      }
+      return acc;
+    }, 0);
+};
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="education main__section main__education section_full-h section_two-cols bg_blue-700" id="education">
+      <h2 class="section__title">Education</h2>
+      <div class="section__content">
+        <div class="education__main">
+          <h3>Main</h3>
+          <p>NI RHTU</p>
+        </div>
+        <div class="education__courses">
+          <h3>Courses</h3>
+          <ul>
+            <li>KTS: Junior Frontend developer</li>
+            <li>Coursera: Algorithms</li>
+            <li>Basic Code: css</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
