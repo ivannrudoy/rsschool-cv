@@ -2,6 +2,7 @@
   --purple: #851e3e;
   --purple-700: #651e3e;
   --skyblue: #F0FBFA;
+  --skyyellow: #ffffb5;
   --section__title_w: 100px;
   --section__content_w: 304px;
 }
@@ -79,4 +80,8 @@
 
 .text_skyblue {
   color: var(--skyblue);
+}
+
+.text_skyyellow {
+  color: var(--skyyellow);
 }
