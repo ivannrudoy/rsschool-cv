@@ -1,0 +1,87 @@
+:root {
+  --purple: #851e3e;
+  --purple-700: #651e3e;
+  --skyblue: #F0FBFA;
+  --skyyellow: #ffffb5;
+  --section__title_w: 100px;
+  --section__content_w: 304px;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navbar__list {
+  text-align: right;
+  margin: 0;
+  cursor: default;
+}
+
+.navbar__item {
+  display: inline;
+  margin-right: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px dotted yellow;
+}
+
+.section__title {
+  flex-basis: var(--section__title_w);
+}
+
+.section__content {
+  flex-basis: var(--section__content_w);
+}
+
+.section_full-h {
+  height: 100vh;
+}
+
+.section_two-cols {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button_link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+}
+
+.bg_purple {
+  background-color: var(--purple);
+}
+
+.bg_purple-700 {
+  background-color: var(--purple-700);
+}
+
+.text_raised {
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+}
+
+.text_sans {
+  font-family: sans-serif;
+}
+
+.text_skyblue {
+  color: var(--skyblue);
+}
+
+.text_skyyellow {
+  color: var(--skyyellow);
+}
