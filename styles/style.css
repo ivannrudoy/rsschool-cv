@@ -36,6 +36,12 @@
   border: 5px dotted yellow;
 }
 
+.projects__desc {
+  display: flex;
+  width: 225px;
+  justify-content: space-between;
+}
+
 .section__title {
   flex-basis: var(--section__title_w);
 }
