@@ -3,6 +3,7 @@
   --purple-700: #651e3e;
   --purple-800: #451e3e;
   --purple-900: #251e3e;
+  --blue: #051e3e;
   --skyblue: #F0FBFA;
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
@@ -84,6 +85,10 @@
 
 .bg_purple-900 {
   background-color: var(--purple-900);
+}
+
+.bg_blue {
+  background-color: var(--blue);
 }
 
 .text_raised {
