@@ -96,7 +96,30 @@ const handleSkillsBehaviour = (doc) => {
   let activeTabId = 0;
 
   setTextActive(prevTab);
-  showTabpanel(prevTabpanel);
+  showTabContent(prevTabContent);
+
+  /**
+   * @param {MouseEvent} ev
+   */
+  const tabsButtonsClickListener = (ev) => {
+    if (ev.target.tagName === "DIV") return;
+    /**
+     * @type {HTMLElement}
+     */
+    const targetTab = ev.target;
+    prevTabId = activeTabId;
+    activeTabId = targetTab.dataset.id;
+    if (activeTabId !== prevTabId) {
+      setTextIdle(prevTab);
+      hideTabContent(prevTabContent);
+      setTextActive(targetTab);
+      const activeTabContent = tabsContent.querySelector(`[data-id="${activeTabId}"]`)
+      showTabContent(activeTabContent);
+      prevTab = targetTab;
+      prevTabContent = activeTabContent;
+    }
+  };
+  tabsButtons.addEventListener("click", tabsButtonsClickListener);
 }
 
 const LoadListener = () => {
