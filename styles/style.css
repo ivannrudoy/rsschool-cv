@@ -138,3 +138,13 @@
 .text_skyyellow {
   color: var(--skyyellow);
 }
+
+.spin_forward {
+  animation: spin_forward 4s linear infinite;
+}
+
+@keyframes spin_forward {
+  to {
+    transform: rotate(360deg);    
+  }
+}
