@@ -36,8 +36,23 @@
 }
 
 .avatar {
+  position: relative;
+}
+
+.avatar::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -7px;
   border-radius: 50%;
-  border: 5px dotted yellow;
+  border: 7px dotted yellow;
+  top: -8px;
+  animation: spin_forward 15s linear infinite;
+}
+
+.avatar__picture {
+  border-radius: 50%;
 }
 
 .projects__desc {
