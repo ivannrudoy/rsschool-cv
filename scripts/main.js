@@ -1,4 +1,5 @@
 const TEXT_ACTIVE = "text_skyyellow";
+const HIDDEN = "visually-hidden";
 
 /**
  * @param {HTMLElement} link
@@ -70,6 +71,16 @@ const handleSkillsBehaviour = (doc) => {
    * @type {HTMLElement}
    */
   const tabsContent = tabs.querySelector(".tabs__content");
+
+  /**
+   * @param {HTMLElement} tabContent
+   */
+  const hideTabContent = (tabContent) => tabContent.classList.add(HIDDEN);
+
+  /**
+   * @param {HTMLElement} tabContent
+   */
+  const showTabContent = (tabContent) => tabContent.classList.remove(HIDDEN);
 
   /**
    * @type {HTMLElement}
