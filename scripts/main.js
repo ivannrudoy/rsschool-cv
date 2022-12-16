@@ -4,12 +4,12 @@ const HIDDEN = "visually-hidden";
 /**
  * @param {HTMLElement} link
  */
-const setLinkActive = (link) => link.classList.add(TEXT_ACTIVE);
+const setTextActive = (link) => link.classList.add(TEXT_ACTIVE);
 
 /**
  * @param {HTMLElement} link
  */
-const setLinkidle = (link) => link.classList.remove(TEXT_ACTIVE);
+const setTextIdle = (link) => link.classList.remove(TEXT_ACTIVE);
 
 /**
  * @param {Document} doc
@@ -26,7 +26,7 @@ const handleNavbarBehaviour = (doc) => {
    * @type {HTMLElement}
    */
   let prevLink = navbar.getElementsByTagName("A")[0];
-  setLinkActive(prevLink);
+  setTextActive(prevLink);
 
   const clickListener = (event) => {
     event.preventDefault();
@@ -44,8 +44,8 @@ const handleNavbarBehaviour = (doc) => {
     const prevId = activeId;
     activeId = targetItem.dataset.id;
     if (activeId !== prevId) {
-      setLinkidle(prevLink);
-      setLinkActive(targetItem);
+      setTextIdle(prevLink);
+      setTextActive(targetItem);
       prevLink = targetItem;
     }
   };
@@ -94,6 +94,9 @@ const handleSkillsBehaviour = (doc) => {
 
   let prevTabId = 0;
   let activeTabId = 0;
+
+  setTextActive(prevTab);
+  showTabpanel(prevTabpanel);
 }
 
 const LoadListener = () => {
