@@ -61,6 +61,10 @@
   justify-content: space-between;
 }
 
+.tabs__content {
+  height: 155px;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
