@@ -56,12 +56,6 @@
   border-radius: 50%;
 }
 
-.projects__desc {
-  display: flex;
-  width: 225px;
-  justify-content: space-between;
-}
-
 .tabs__button {
   padding-left: var(--padding-default);
 }
@@ -69,6 +63,17 @@
 .tabs__content {
   height: 155px;
 }
+
+.projects__preview {
+  width: 225px;
+}
+
+.projects__desc {
+  display: flex;
+  width: 225px;
+  justify-content: space-between;
+}
+
 
 .contacts {
   display: flex;
