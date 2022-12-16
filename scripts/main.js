@@ -52,8 +52,42 @@ const handleNavbarBehaviour = (doc) => {
   navbar.addEventListener("click", clickListener);
 };
 
+/**
+ * @param {Document} doc
+ */
+const handleSkillsBehaviour = (doc) => {
+  /**
+   * @type {HTMLElement}
+   */
+  const tabs = doc.querySelector(".tabs");
+
+  /**
+   * @type {HTMLElement}
+   */
+  const tabsButtons = tabs.querySelector(".tabs__buttons");
+
+  /**
+   * @type {HTMLElement}
+   */
+  const tabsContent = tabs.querySelector(".tabs__content");
+
+  /**
+   * @type {HTMLElement}
+   */
+  let prevTab = tabsButtons.children[0];
+
+  /**
+   * @type {HTMLElement}
+   */
+  let prevTabContent = tabsContent.children[0];
+
+  let prevTabId = 0;
+  let activeTabId = 0;
+}
+
 const LoadListener = () => {
   handleNavbarBehaviour(document);
+  handleSkillsBehaviour(document);
 }
 
 document.body.onload = LoadListener;
