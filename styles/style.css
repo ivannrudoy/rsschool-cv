@@ -11,6 +11,7 @@
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
   --section__content_w: 304px;
+  --padding-default: 8px;
 }
 
 .page {
@@ -32,7 +33,7 @@
 
 .navbar__item {
   display: inline;
-  margin-right: 8px;
+  margin-right: var(--padding-default);
 }
 
 .avatar {
