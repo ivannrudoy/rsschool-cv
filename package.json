@@ -1,0 +1,23 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://ivannrudoy.github.io/rsschool-cv/",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivannrudoy/rsschool-cv.git"
+  },
+  "keywords": [
+    "rsschool",
+    "cv"
+  ],
+  "author": "Ivan Rudoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivannrudoy/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/ivannrudoy/rsschool-cv#readme"
+}
