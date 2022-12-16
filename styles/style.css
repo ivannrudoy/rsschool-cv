@@ -11,6 +11,7 @@
   --skyyellow: #ffffb5;
   --section__title_w: 100px;
   --section__content_w: 304px;
+  --padding-default: 8px;
 }
 
 .page {
@@ -32,18 +33,41 @@
 
 .navbar__item {
   display: inline;
-  margin-right: 8px;
+  margin-right: var(--padding-default);
 }
 
 .avatar {
+  position: relative;
+}
+
+.avatar::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -7px;
   border-radius: 50%;
-  border: 5px dotted yellow;
+  border: 7px dotted yellow;
+  top: -8px;
+  animation: spin_forward 15s linear infinite;
+}
+
+.avatar__picture {
+  border-radius: 50%;
 }
 
 .projects__desc {
   display: flex;
   width: 225px;
   justify-content: space-between;
+}
+
+.tabs__button {
+  padding-left: var(--padding-default);
+}
+
+.tabs__content {
+  height: 155px;
 }
 
 .contacts {
@@ -137,4 +161,27 @@
 
 .text_skyyellow {
   color: var(--skyyellow);
+}
+
+.spin_forward {
+  animation: spin_forward 4s linear infinite;
+}
+
+@keyframes spin_forward {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

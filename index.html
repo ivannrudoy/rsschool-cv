@@ -9,7 +9,7 @@
 </head>
 <body class="page text_skyblue">
   <header class="main-header page__header">
-    <nav class="main-header__navbar navbar">
+    <nav class="main-header__navbar navbar" id="navbar">
       <ul class="navbar__list text_sans">
         <li class="navbar__item">
           <a class="navbar__link button_link" href="#about" data-id="0">About</a>
@@ -35,7 +35,9 @@
       </ul>
     </nav>
     <section class="main-header__content section_full-h section_two-cols bg_purple">
-      <img class="avatar main-header__avatar section__title" src="./images/avatar.png" alt="Ivan Rudoy">
+      <div class="avatar">
+        <img class="avatar__picture main-header__avatar section__title" src="./images/avatar.png" alt="Ivan Rudoy">
+      </div>
       <div class="main-header__title section__content">
         <h1 class="main-header__name text_raised">Ivan Rudoy</h1>
         <h3 class="main-header__job">Junior Frontend Developer</h3>
@@ -69,14 +71,14 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="skills main__section main__skills section_full-h section_two-cols bg_purple-800">
+    <section class="skills main__section main__skills section_full-h section_two-cols bg_purple-800" id="skills">
       <h2 class="skills__title section__title">Skills</h2>
       <div class="skills__content section__content">
         <div class="tabs">
           <div class="tabs__buttons" role="tablist">
-            <a class="tabs__button button_link" role="tab" data-id="0">Languages</a>
-            <a class="tabs__button button_link" role="tab" data-id="1">Frameworks</a>
-            <a class="tabs__button button_link" role="tab" data-id="2">Utilities</a>
+            <a class="tabs__button button button_link" role="tab" data-id="0">Languages</a>
+            <a class="tabs__button button button_link" role="tab" data-id="1">Frameworks</a>
+            <a class="tabs__button button button_link" role="tab" data-id="2">Utilities</a>
           </div>
           <div class="tabs__content" role="region">
             <ul class="tabs__item" data-id="0">
@@ -89,7 +91,7 @@
               <li>SCSS</li>
               <li>Bash</li>
             </ul>
-            <ul class="tabs__item tabs__item_hidden" data-id="1">
+            <ul class="tabs__item visually-hidden" data-id="1">
               <li>React</li>
               <li>react-router</li>
               <li>mobx</li>
@@ -97,7 +99,7 @@
               <li>jest</li>
               <li>puppyter</li>
             </ul>
-            <ul class="tabs__item tabs__item_hidden" data-id="2">
+            <ul class="tabs__item visually-hidden" data-id="2">
               <li>webpack</li>
               <li>eslint</li>
               <li>Figma</li>
@@ -198,5 +200,6 @@ const countBits = (numb) => {
       </a>
     </div>
   </footer>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>
