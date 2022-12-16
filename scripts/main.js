@@ -28,12 +28,17 @@ const handleNavbarBehaviour = (doc) => {
   setLinkActive(prevLink);
 
   const clickListener = (event) => {
+    event.preventDefault();
+
     /**
      * @type {HTMLElement}
      */
     const targetItem = event.target;
 
     if (targetItem.tagName === "UL" || targetItem.tagName === "NAV") return;
+
+    const viewToScrollInto = doc.querySelector(targetItem.getAttribute('href'));
+    viewToScrollInto.scrollIntoView({ behavior: "smooth" });
 
     const prevId = activeId;
     activeId = targetItem.dataset.id;
