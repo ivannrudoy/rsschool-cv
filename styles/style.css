@@ -62,6 +62,10 @@
   justify-content: space-between;
 }
 
+.tabs__button {
+  padding-left: var(--padding-default);
+}
+
 .tabs__content {
   height: 155px;
 }
