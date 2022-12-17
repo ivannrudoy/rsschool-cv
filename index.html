@@ -9,7 +9,8 @@
   <title>Ivan Rudoy CV</title>
 </head>
 <body class="page text_skyblue">
-  <header class="main-header page__header">
+  <button class="page__up up visually-hidden button_link bg_skyyellow text_sans text_blue">Up</button>
+  <header class="main-header page__header" id="header">
     <nav class="main-header__navbar navbar" id="navbar">
       <ul class="navbar__list text_sans">
         <li class="navbar__item">
@@ -198,23 +199,30 @@ const countBits = (numb) => {
       <h2>Contacts</h2>
       <ul class="text_sans">
         <li>
-          <img class="icon_s contacts__icon" src="./images/icons/phone.svg" alt="phone">
-          +79056279973
+          <a class="text_skyblue button_link" href="+tel:+79056279973">
+            <img class="icon_s contacts__icon" src="./images/icons/phone.svg" alt="phone">
+            +7 (905) 627-99-73
+          </a>
         </li>
         <li>
-          <img class="icon_s contacts__icon" src="./images/icons/gmail.svg" alt="mail">
-          ivannrudoy@gmail.com
+          <a class="text_skyblue" href="mailto:ivannrudoy@gmail.com">
+            <img class="icon_s contacts__icon" src="./images/icons/gmail.svg" alt="mail">
+            ivannrudoy@gmail.com
+          </a>
         </li>
         <li>
-          <a class="text_skyblue button_link" href="https://github.com/ivannrudoy">
+          <a class="text_skyblue" href="https://github.com/ivannrudoy">
             <img class="icon_s contacts__icon" src="./images/icons/github.svg" alt="github">
             ivannrudoy
           </a>
         </li>
       </ul>
     </section>
-    <div class="copyrights">
-      <a href="https://github.com/ivannrudoy">Github: ivannrudoy</a>
+    <div class="copyrights text_sans">
+      <a class="text_skyblue" href="https://github.com/ivannrudoy">
+        <img class="icon_s contacts__icon" src="./images/icons/github.svg" alt="github">
+        ivannrudoy
+      </a>
       2022
       <a href="https://rs.school/js-stage0/">
         <img src="https://rs.school/images/rs_school_js.svg" class="copyrights__logo" alt="rs school">

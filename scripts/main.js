@@ -12,12 +12,55 @@ const setTextActive = (link) => link.classList.add(TEXT_ACTIVE);
 const setTextIdle = (link) => link.classList.remove(TEXT_ACTIVE);
 
 /**
+ * @param {HTMLElement} el
+ */
+const hideElement = (el) => el.classList.add(HIDDEN);
+
+/**
+ * @param {HTMLElement} el
+ */
+const showElement = (el) => el.classList.remove(HIDDEN);
+
+/**
+ * @param {Document} doc
+ */
+const handleUpBehaviour = (doc) => {
+  const SCROLL_THRESHOLD = 40;
+
+  /**
+   * @type {HTMLButtonElement}
+   */
+  const up = doc.querySelector(".up");
+
+  /**
+   * @type {HTMLElement}
+   */
+  const header = doc.getElementById("header");
+
+  const scrollListener = () => {
+    if (document.body.scrollTop > SCROLL_THRESHOLD
+      || document.documentElement.scrollTop > SCROLL_THRESHOLD) {
+      showElement(up);
+    } else {
+      hideElement(up);
+    }
+  }
+
+  const clickUpListener = (ev) => {
+    header.scrollIntoView({ behavior: "smooth" });
+  }
+
+  doc.onscroll = scrollListener;
+  up.addEventListener("click", clickUpListener);
+}
+
+/**
  * @param {Document} doc
  */
 const handleNavbarBehaviour = (doc) => {
   let activeId = 0;
 
-    /**
+  /**
    * @type {HTMLElement}
    */
   const navbar = doc.getElementById("navbar");
@@ -73,16 +116,6 @@ const handleSkillsBehaviour = (doc) => {
   const tabsContent = tabs.querySelector(".tabs__content");
 
   /**
-   * @param {HTMLElement} tabContent
-   */
-  const hideTabContent = (tabContent) => tabContent.classList.add(HIDDEN);
-
-  /**
-   * @param {HTMLElement} tabContent
-   */
-  const showTabContent = (tabContent) => tabContent.classList.remove(HIDDEN);
-
-  /**
    * @type {HTMLElement}
    */
   let prevTab = tabsButtons.children[0];
@@ -96,7 +129,7 @@ const handleSkillsBehaviour = (doc) => {
   let activeTabId = 0;
 
   setTextActive(prevTab);
-  showTabContent(prevTabContent);
+  showElement(prevTabContent);
 
   /**
    * @param {MouseEvent} ev
@@ -111,10 +144,10 @@ const handleSkillsBehaviour = (doc) => {
     activeTabId = targetTab.dataset.id;
     if (activeTabId !== prevTabId) {
       setTextIdle(prevTab);
-      hideTabContent(prevTabContent);
+      hideElement(prevTabContent);
       setTextActive(targetTab);
       const activeTabContent = tabsContent.querySelector(`[data-id="${activeTabId}"]`)
-      showTabContent(activeTabContent);
+      showElement(activeTabContent);
       prevTab = targetTab;
       prevTabContent = activeTabContent;
     }
@@ -124,6 +157,7 @@ const handleSkillsBehaviour = (doc) => {
 
 const LoadListener = () => {
   hljs.highlightAll();
+  handleUpBehaviour(document);
   handleNavbarBehaviour(document);
   handleSkillsBehaviour(document);
 }
