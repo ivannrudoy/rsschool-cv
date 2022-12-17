@@ -123,6 +123,7 @@ const handleSkillsBehaviour = (doc) => {
 }
 
 const LoadListener = () => {
+  hljs.highlightAll();
   handleNavbarBehaviour(document);
   handleSkillsBehaviour(document);
 }

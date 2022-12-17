@@ -12,6 +12,7 @@
   --section__title_w: 100px;
   --section__content_w: 304px;
   --padding-default: 8px;
+  --border-radius: 10px;
 }
 
 .page {
@@ -122,6 +123,10 @@
   text-decoration: none;
   text-transform: capitalize;
   color: inherit;
+}
+
+.border_round {
+  border-radius: var(--border-radius);
 }
 
 .bg_purple {
