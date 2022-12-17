@@ -31,6 +31,11 @@ const handleUpBehaviour = (doc) => {
   const up = doc.querySelector(".up");
 
   const scrollListener = (ev) => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      showElement(up);
+    } else {
+      hideElement(up);
+    }
   }
 
   doc.onscroll = scrollListener;

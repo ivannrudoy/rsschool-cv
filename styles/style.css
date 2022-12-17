@@ -21,7 +21,7 @@
 }
 
 .page__up {
-  position: absolute;
+  position: fixed;
 }
 
 .navbar {
