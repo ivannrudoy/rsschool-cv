@@ -129,6 +129,10 @@
   border-radius: var(--border-radius);
 }
 
+.icon_s {
+  width: 18px;
+}
+
 .bg_purple {
   background-color: var(--purple);
 }
