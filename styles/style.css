@@ -79,13 +79,16 @@
   padding-left: var(--padding-default);
 }
 
-
 .contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 95%;
+}
+
+.contacts__icon {
+  vertical-align: baseline;
 }
 
 .copyrights {
@@ -127,6 +130,11 @@
 
 .border_round {
   border-radius: var(--border-radius);
+}
+
+.icon_s {
+  width: 17px;
+  height: auto;
 }
 
 .bg_purple {
