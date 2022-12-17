@@ -88,7 +88,7 @@
 }
 
 .contacts__icon {
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 .copyrights {
@@ -133,7 +133,7 @@
 }
 
 .icon_s {
-  width: 18px;
+  width: 17px;
   height: auto;
 }
 
