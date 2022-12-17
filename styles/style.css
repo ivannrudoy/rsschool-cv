@@ -74,6 +74,10 @@
   justify-content: space-between;
 }
 
+.projects__review {
+  padding-left: var(--padding-default);
+}
+
 
 .contacts {
   display: flex;
