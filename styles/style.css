@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+.page__up {
+  position: absolute;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
