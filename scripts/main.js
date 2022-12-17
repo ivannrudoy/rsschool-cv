@@ -30,6 +30,11 @@ const handleUpBehaviour = (doc) => {
    */
   const up = doc.querySelector(".up");
 
+  /**
+   * @type {HTMLElement}
+   */
+  const header = doc.getElementById("header");
+
   const scrollListener = (ev) => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       showElement(up);
@@ -38,7 +43,12 @@ const handleUpBehaviour = (doc) => {
     }
   }
 
+  const clickUpListener = (ev) => {
+    header.scrollIntoView({ behavior: "smooth" });
+  }
+
   doc.onscroll = scrollListener;
+  up.addEventListener("click", clickUpListener);
 }
 
 /**
