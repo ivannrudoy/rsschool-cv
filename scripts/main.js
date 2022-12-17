@@ -25,6 +25,8 @@ const showElement = (el) => el.classList.remove(HIDDEN);
  * @param {Document} doc
  */
 const handleUpBehaviour = (doc) => {
+  const SCROLL_THRESHOLD = 40;
+
   /**
    * @type {HTMLButtonElement}
    */
@@ -35,8 +37,9 @@ const handleUpBehaviour = (doc) => {
    */
   const header = doc.getElementById("header");
 
-  const scrollListener = (ev) => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  const scrollListener = () => {
+    if (document.body.scrollTop > SCROLL_THRESHOLD
+      || document.documentElement.scrollTop > SCROLL_THRESHOLD) {
       showElement(up);
     } else {
       hideElement(up);

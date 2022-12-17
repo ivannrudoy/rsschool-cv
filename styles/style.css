@@ -22,6 +22,8 @@
 
 .page__up {
   position: fixed;
+  bottom: var(--padding-default);
+  right: var(--padding-default);
 }
 
 .navbar {
