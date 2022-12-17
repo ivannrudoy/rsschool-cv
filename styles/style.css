@@ -26,6 +26,12 @@
   right: var(--padding-default);
 }
 
+.up {
+  border: none;
+  padding: var(--padding-default);
+  border-radius: var(--border-radius);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -175,6 +181,10 @@
   background-color: var(--blue-900);
 }
 
+.bg_skyyellow {
+  background-color: var(--skyyellow);
+}
+
 .text_raised {
   text-shadow: 0 1px 0 rgba(0,0,0,.5);
 }
@@ -189,6 +199,10 @@
 
 .text_skyyellow {
   color: var(--skyyellow);
+}
+
+.text_blue {
+  color: var(--blue);
 }
 
 .spin_forward {
