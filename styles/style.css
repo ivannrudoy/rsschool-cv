@@ -112,12 +112,15 @@
   width: 32px;
 }
 
-.section__title {
-  flex-basis: var(--section__title_w);
+section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.section__content {
-  flex-basis: var(--section__content_w);
+.section__title {
+  flex-basis: var(--section__title_w);
+  margin-left: var(--padding-default);
 }
 
 .section_full-h {
@@ -125,10 +128,12 @@
 }
 
 .section_two-cols {
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+}
+
+.section_one-col {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .button {
