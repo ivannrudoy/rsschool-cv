@@ -26,6 +26,10 @@
   right: var(--padding-default);
 }
 
+.page__burger-button {
+  display: none;
+}
+
 .up {
   border: none;
   padding: var(--padding-default);
