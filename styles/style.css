@@ -30,6 +30,10 @@
   right: var(--padding-default);
 }
 
+.burger {
+  position: fixed;
+}
+
 .burger__button {
   display: none;
 }
