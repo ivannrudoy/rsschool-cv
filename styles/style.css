@@ -13,6 +13,8 @@
   --section__content_w: 304px;
   --padding-default: 8px;
   --border-radius: 10px;
+  --burger-width: 15px;
+  --burger-height: 3px;
 }
 
 .page {
@@ -40,8 +42,8 @@
 
 .burger__icon {
   display: block;
-  height: 3px;
-  width: 15px;
+  height: var(--burger-height);
+  width: var(--burger-width);
   position: relative;
 }
 
