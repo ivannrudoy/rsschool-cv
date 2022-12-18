@@ -92,6 +92,10 @@
   padding-left: var(--padding-default);
 }
 
+.projects__features {
+  margin-top: 0;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
