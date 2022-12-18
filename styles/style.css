@@ -225,6 +225,10 @@ section {
   color: var(--skyyellow);
 }
 
+.text_skyyellow-hover:hover {
+  color: var(--skyyellow);
+}
+
 .text_blue {
   color: var(--blue);
 }
