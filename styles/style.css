@@ -40,7 +40,8 @@
 
 .burger__icon {
   display: block;
-  height: 2px;
+  height: 3px;
+  width: 15px;
   position: relative;
 }
 
@@ -217,6 +218,10 @@ section {
 
 .bg_skyyellow {
   background-color: var(--skyyellow);
+}
+
+.bg_skyblue {
+  background-color: var(--skyblue);
 }
 
 .text_raised {
