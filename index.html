@@ -9,30 +9,35 @@
   <title>Ivan Rudoy CV</title>
 </head>
 <body class="page text_skyblue">
+  <div class="page__content-wrapper">
   <button class="page__up up visually-hidden button_link bg_skyyellow text_sans text_blue">Up</button>
   <header class="main-header page__header" id="header">
+    <input class="page__burger-button" type="checkbox" id="burger-button" />
     <nav class="main-header__navbar navbar" id="navbar">
       <ul class="navbar__list text_sans">
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#about" data-id="0">About</a>
+          <a class="navbar__link button_link" href="#header" data-id="0">Me</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#skills" data-id="1">Skills</a>
+          <a class="navbar__link button_link" href="#about" data-id="1">About</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#projects" data-id="2">Projects</a>
+          <a class="navbar__link button_link" href="#skills" data-id="2">Skills</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#code-sample" data-id="3">Code</a>
+          <a class="navbar__link button_link" href="#projects" data-id="3">Projects</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#education" data-id="4">Education</a>
+          <a class="navbar__link button_link" href="#code-sample" data-id="4">Code</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#language" data-id="5">Language</a>
+          <a class="navbar__link button_link" href="#education" data-id="5">Education</a>
         </li>
         <li class="navbar__item">
-          <a class="navbar__link button_link" href="#contacts" data-id="6">Contacts</a>
+          <a class="navbar__link button_link" href="#language" data-id="6">Language</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link button_link" href="#contacts" data-id="7">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -47,7 +52,7 @@
     </section>
   </header>
   <main>
-    <section id="about" class="about main__section main__about bg_purple-700 section_full-h section_two-cols">
+    <section id="about" class="about main__section main__about bg_purple-700 section_full-h section_one-col">
       <h2 class="about__title section__title">About me</h2>
       <div class="about__content section__content text_sans">
         <p>
@@ -119,9 +124,11 @@
         <article>
           <h3>Crypto</h3>
           <div class="projects__desc text_sans">
-            <img class="projects__preview" src="./pictures/projects/crypto.png" alt="client">
+            <a href="https://ivannrudoy.github.io/ivannrudoy"">
+              <img class="projects__preview" src="./pictures/projects/crypto.png" alt="client">
+            </a>
             <div class="projects__review">
-              <h4>Features:</h4>
+              <h4 class="projects__features">Features:</h4>
               <ul class="text_sans">
                 <li>Coingecko API Client</li>
                 <li>React</li>
@@ -228,6 +235,7 @@ const countBits = (numb) => {
       </a>
     </div>
   </footer>
+  </div>
 	<script src="./scripts/highlight.min.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
