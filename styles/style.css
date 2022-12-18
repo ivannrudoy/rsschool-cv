@@ -78,7 +78,8 @@
 }
 
 .projects__preview {
-  width: 225px;
+  width: 100px;
+  height: fit-content;
 }
 
 .projects__desc {
