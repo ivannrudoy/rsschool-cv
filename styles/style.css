@@ -34,6 +34,12 @@
   display: none;
 }
 
+.burger__icon {
+  display: block;
+  height: 2px;
+  position: relative;
+}
+
 .up {
   border: none;
   padding: var(--padding-default);
