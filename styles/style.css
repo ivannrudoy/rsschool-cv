@@ -30,7 +30,7 @@
   right: var(--padding-default);
 }
 
-.page__burger-button {
+.burger__button {
   display: none;
 }
 
