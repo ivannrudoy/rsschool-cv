@@ -116,11 +116,15 @@ section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 var(--padding-default);
 }
 
 .section__title {
   flex-basis: var(--section__title_w);
-  margin-left: var(--padding-default);
+}
+
+.section__content {
+  padding: 0 var(--padding-default);
 }
 
 .section_full-h {
